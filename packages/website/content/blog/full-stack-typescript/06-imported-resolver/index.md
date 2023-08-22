@@ -66,6 +66,7 @@ And then where you're instantiating your `ApolloServer`
 -   typeDefs,
 +   schema: addResolversToSchema({
 +     schema: SCHEMA,
++     resolvers
 +   }),
     context: () => ({ db }),
     plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
